@@ -13,7 +13,7 @@ int main( int argc, char **argv ) {
     char Strings[100] = ""; 
     if (argc <=11) {
         for( int k=1; k<argc; ++k ){
-            if (strlen(argv[k])<=4 && strlen(argv[k])>=0 ){
+            if (strlen(argv[k])<=4 && strlen(argv[k])>=1 ){
                 strcat(Strings, argv[k]);
                 if (k<argc-1) {
                     strcat(Strings, "-");
