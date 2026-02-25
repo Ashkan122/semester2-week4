@@ -11,9 +11,9 @@ int main( int argc, char **argv ) {
 
     // define appropriate data to hold your answer
     char Strings[100] = ""; 
-    if (argc <11) {
+    if (argc <=11) {
         for( int k=1; k<argc; ++k ){
-            if (strlen(argv[k])<5 && strlen(argv[k])>0 ){
+            if (strlen(argv[k])<=4 && strlen(argv[k])>=0 ){
                 strcat(Strings, argv[k]);
                 if (k<argc-1) {
                     strcat(Strings, "-");
